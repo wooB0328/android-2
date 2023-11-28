@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652199342420",
+    "project_id": "androidproject-cf36c",
+    "storage_bucket": "androidproject-cf36c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652199342420:android:7f8e145b564b98cefa58c1",
+        "android_client_info": {
+          "package_name": "com.example.androidproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPa_Tn-N-4q_4VXlj3qutQDvhD87sFe0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

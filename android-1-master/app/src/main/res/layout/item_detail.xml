@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/detailBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로가기"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/detailMessageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="채팅하기"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/detailUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="작성자: null"
+                app:layout_constraintStart_toStartOf="@+id/detailTitle"
+                app:layout_constraintTop_toBottomOf="@+id/detailTitle" />
+
+            <TextView
+                android:id="@+id/detailPosting"
+                android:layout_width="342dp"
+                android:layout_height="471dp"
+                android:layout_marginTop="80dp"
+                android:minHeight="340dp"
+                android:text="내용"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/detailTitle"
+                app:layout_constraintTop_toBottomOf="@+id/detailTitle" />
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:maxWidth="250dp"
+                android:maxLines="1"
+                android:text="제목ㅁ이러ㅣㅏㅁ어라ㅓㅁ아ㅣ리ㅏ이라이ㅏ리ㅏㅁㄴ어리ㅓㄴ미럼러"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/detailBackButton"
+                app:layout_constraintTop_toBottomOf="@+id/detailBackButton" />
+
+            <TextView
+                android:id="@+id/detailPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="가격: 0"
+                app:layout_constraintStart_toEndOf="@+id/detailUserName"
+                app:layout_constraintTop_toTopOf="@+id/detailUserName" />
+
+            <Button
+                android:id="@+id/detailUpdateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="수정"
+                app:layout_constraintEnd_toEndOf="@+id/detailPosting"
+                app:layout_constraintTop_toBottomOf="@+id/detailPosting" />
+
+            <Button
+                android:id="@+id/detailDeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="삭제"
+                app:layout_constraintBottom_toBottomOf="@+id/detailUpdateButton"
+                app:layout_constraintEnd_toStartOf="@+id/detailUpdateButton"
+                app:layout_constraintTop_toTopOf="@+id/detailUpdateButton" />
+
+            <TextView
+                android:id="@+id/detailSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="판매중"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/detailTitle"
+                app:layout_constraintEnd_toEndOf="@+id/detailMessageButton"
+                app:layout_constraintTop_toTopOf="@+id/detailTitle" />
+
+            <TextView
+                android:id="@+id/detailUserEmail"
+                android:layout_width="342dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/detailUserName"
+                app:layout_constraintTop_toBottomOf="@+id/detailUserName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>
